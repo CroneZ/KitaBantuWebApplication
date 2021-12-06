@@ -4,6 +4,7 @@
     width:100%;
     font-family: "Poppins";
     color: #5E5873;
+    overflow: hidden;
 }
 
 .brandLogo {

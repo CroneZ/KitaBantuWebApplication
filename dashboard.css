@@ -4,6 +4,7 @@
     width:100%;
     font-family: "Poppins";
     color: #5E5873;
+    overflow: hidden;
 }
 
 .contentWrapper{
@@ -11,7 +12,7 @@
     flex-direction: row;
     width: 100%;
     padding:1%;
-    height:100%;
+    height:92%;
 }
 
 .leftContainer{
@@ -33,11 +34,38 @@
      width: 78%;
      padding:1%;
  }
+
+ .searchBarWrapper{
+     display:flex;
+     flex-direction:row;
+     margin-bottom: 20px;
+ }
+
  .searchBar{
      background-color: white;
      border-radius: 15px;
      padding: 10px;
+     width:47%;
      box-shadow:  0px 2px 3px #888888;
+ }
+
+ .columnBar{
+     background-color: white;
+     border-radius: 15px;
+     padding: 10px;
+     width:23%;
+     margin-left:1%;
+     box-shadow:  0px 2px 3px #888888;
+ }
+
+ .searchButton{
+    background-color: #37B664;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+    width:20%;
+    margin-left:1%;
+    box-shadow:  0px 2px 3px #888888;
  }
 
 .sideBar{
@@ -70,3 +98,107 @@
  .sideBarTitle{
      color:#37B664;
  }
+
+ .profileFormWrapper{
+     background-color: white;
+     border-radius: 15px;
+     padding: 20px;
+     width: 90%;
+     box-shadow:  0px 2px 3px #888888;
+
+ }
+
+ .formContentWrapper{
+     display:flex;
+     flex-direction: row;
+ }
+
+ .formContentWrapper .leftColumn, .middleColumn, .rightColumn{
+     margin: 1%;
+ }
+
+ .formContentWrapper input, select{
+     width:100%;
+ }
+
+ .formContentWrapper .shortInputWrapper{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ .shortInput{
+     width: 45%;
+ }
+
+ .leftColumn{
+    width:25%;
+ }
+
+ .middleColumn{
+    width:25%;
+ }
+
+ .rightColumn{
+    width:45%;
+ }
+
+ .updateProfileButton{
+     margin:5px;
+     padding: 20px;
+     background-color: #37B664;
+     color: white;
+     width: 100%;
+     border-radius: 15px;
+     font-family: "Poppins";
+     margin-bottom: 10px;
+ }
+
+ .tableWrapper{
+    width: 100%;
+}
+
+.tableWrapper table{
+    width: 93%;
+    text-align: center;
+}
+
+ .tableWrapper th{
+     width:15%;
+     background-color: #37B664;
+     color:white;
+ }
+
+ .tableWrapper td{
+    border: 1px solid #37B664;
+ }
+
+ .acceptedStatus{
+     background-color: #37B664;
+     padding:15px;
+     color: white;
+     border-radius: 15px;
+     margin-top: 10px;  
+     width: 80%;
+     font-family: "Poppins";
+ }
+
+ .pendingStatus{
+    background-color: yellow;
+    padding:15px;
+    color: black;
+    border-radius: 15px;
+    margin-top: 10px;  
+    width: 80%;
+    font-family: "Poppins";
+}
+
+.rejectedStatus{
+    background-color: #AD2041;
+    padding:15px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;  
+    width: 80%;
+    font-family: "Poppins";
+}
