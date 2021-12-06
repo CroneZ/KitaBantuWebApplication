@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css"> 
+    </head>
+    <body class = "greenBody">
+        <div class="loginMainWrapper">
+            <div class = "centerImageWrapper">
+                <img class = "brandLogo" src="brand.png">
+            </div>
+            <div class = "loginFormWrapper">
+                <div class = "formTitleWrapper">
+                    <h2>Kita Bantu System</h2>
+                </div>
+                <div class = "formDescriptionWrapper">
+                    Welcome to Kita Bantu Systems 👋<br>
+                    Please sign-in to your account to continue ! <p>
+                </div>
+                <form class = "loginForm" name = "loginForm" method = "POST" action = "login.php">
+                    Email
+                    <input type = "text" placeholder="example@example.com" name = "email">
+                    Password
+                    <input type = "password" placeholder="********" name = "password">
+                    <div class = "checkBoxWrapper">
+                        <input type = "checkbox" id = "isRememberMe" name = "isRememberMe" value = "isRememberMe">Remember Me
+                    </div>
+                    <input type = "submit" class = "greenRoundButton" name = "loginFormSubmit" value = "Sign In">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
