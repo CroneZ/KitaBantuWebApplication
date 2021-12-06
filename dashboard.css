@@ -1,0 +1,72 @@
+.greenBody{
+    background-color: #E4FFED;
+    height:100%;
+    width:100%;
+    font-family: "Poppins";
+    color: #5E5873;
+}
+
+.contentWrapper{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding:1%;
+    height:100%;
+}
+
+.leftContainer{
+    width:20%;
+    padding:1%;
+    height: 100%;
+}
+
+.sideBarWrapper{
+    background-color: white;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow:  0px 2px 3px #888888;
+}
+
+ .rightContainer{
+     display: flex;
+     flex-direction: column;
+     width: 78%;
+     padding:1%;
+ }
+ .searchBar{
+     background-color: white;
+     border-radius: 15px;
+     padding: 10px;
+     box-shadow:  0px 2px 3px #888888;
+ }
+
+.sideBar{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+ .sideBar button{
+     background-color: white;
+     border-radius: 10px;
+     box-shadow:  0px 2px 3px #888888;
+     margin-top:12px;
+     margin-bottom:12px;
+     padding:10px;
+     border:none;
+     font-family: "Poppins";
+ }
+
+ .sideBar .active{
+     background-color: #37B664;
+     color: white;
+ }
+
+ .sideBar .logoutButton{
+     background-color: #AD2041;
+     color: white;
+ }
+
+ .sideBarTitle{
+     color:#37B664;
+ }
