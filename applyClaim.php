@@ -21,7 +21,19 @@
                         <td><?php echo $result[$i]['claimID']; ?></td>
                         <td><?php echo $result[$i]['volunteerID']; ?></td>
                         <td><?php echo $result[$i]['totalClaim']; ?></td>
-                        <td><?php echo $result[$i]['status']; ?></td>
+                        <td>
+                            <form method = "POST" action = "dashboard.php?mode=viewApplyClaim&id=<?php echo $result[$i]['claimID']; ?>">
+                                <input class = <?php 
+                                    if($result[$i]['status'] == "accepted"){
+                                        echo "acceptedStatus";
+                                    }elseif($result[$i]['status'] == "pending"){
+                                        echo "pendingStatus";
+                                    }elseif($result[$i]['status'] == "reject"){
+                                        echo "rejectedStatus";
+                                    }
+                                ?> type = "submit" value = <?php echo $result[$i]['status']; ?>>
+                            </form>
+                        </td>
                     </tr>
                 <?php
             }

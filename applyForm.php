@@ -31,7 +31,7 @@
                                     }elseif($result[$i]['accountStatus'] == "pending"){
                                         echo "pendingStatus";
                                     }elseif($result[$i]['accountStatus'] == "reject"){
-                                        echo "rejectStatus";
+                                        echo "rejectedStatus";
                                     }
                                 ?> type = "submit" value = <?php echo $result[$i]['accountStatus']; ?>>
                             </form>

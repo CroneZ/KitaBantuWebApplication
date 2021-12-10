@@ -37,6 +37,62 @@
                 echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
             }
         }
+    }elseif(isset($_GET['mode']) && $_GET['mode'] === "acceptForm"){
+        if(isset($_GET['id'])){
+            $result = update_user_status($_GET['id'], "accepted");
+
+            if($result === TRUE){
+                $message = "Update Success!";
+                $url = "dashboard.php?mode=applyForm";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }else{
+                $message = "Update failed!";
+                $url = "dashboard.php?mode=applyForm";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }
+        }
+    }elseif(isset($_GET['mode']) && $_GET['mode'] === "rejectForm"){
+        if(isset($_GET['id'])){
+            $result = update_user_status($_GET['id'], "reject");
+
+            if($result === TRUE){
+                $message = "Update Success!";
+                $url = "dashboard.php?mode=applyForm";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }else{
+                $message = "Update failed!";
+                $url = "dashboard.php?mode=applyForm";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }
+        }
+    }elseif(isset($_GET['mode']) && $_GET['mode'] === "acceptClaim"){
+        if(isset($_GET['id'])){
+            $result = update_claim_status($_GET['id'], "accepted");
+
+            if($result === TRUE){
+                $message = "Update Success!";
+                $url = "dashboard.php?mode=applyClaim";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }else{
+                $message = "Update failed!";
+                $url = "dashboard.php?mode=applyClaim";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }
+        }
+    }elseif(isset($_GET['mode']) && $_GET['mode'] === "rejectClaim"){
+        if(isset($_GET['id'])){
+            $result = update_claim_status($_GET['id'], "reject");
+
+            if($result === TRUE){
+                $message = "Update Success!";
+                $url = "dashboard.php?mode=applyClaim";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }else{
+                $message = "Update failed!";
+                $url = "dashboard.php?mode=applyClaim";
+                echo "<script type = 'text/javascript'>alert('$message');window.location = '$url'</script>";
+            }
+        }
     }
 ?>
 

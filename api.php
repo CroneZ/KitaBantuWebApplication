@@ -116,6 +116,20 @@ function select_apply_form(){
     return $rows;
 }
 
+function select_apply_form_based_on_id($id){
+    require_once("database.php");
+
+    $sql = "SELECT * FROM user WHERE userID = '$id'";
+
+    $result = mysqli_query($conn, $sql);
+	$rows = array();
+    while($row = mysqli_fetch_assoc($result)){
+		$rows[] = $row;
+	}
+
+    return $rows;
+}
+
 function select_apply_claim(){
 
     require_once("database.php");
@@ -131,5 +145,48 @@ function select_apply_claim(){
     return $rows;
 
 }
+
+function select_claim_items_based_on_claim_id($id){
+
+    require_once("database.php");
+
+    $sql = "SELECT * FROM claimitems WHERE claimID = '$id'";
+
+    $result = mysqli_query($conn, $sql);
+	$rows = array();
+    while($row = mysqli_fetch_assoc($result)){
+		$rows[] = $row;
+	}
+
+    return $rows;
+
+}
+
+function update_user_status($id, $status){
+
+    require_once("database.php");
+
+    $sql = "UPDATE user SET accountStatus = '$status' WHERE userID = $id";
+
+    if($conn->query($sql) === TRUE){
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+}
+
+function update_claim_status($id, $status){
+    
+    require_once("database.php");
+
+    $sql = "UPDATE claim SET status = '$status' WHERE claimID = $id";
+
+    if($conn->query($sql) === TRUE){
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+}
+
 
 ?>

@@ -171,6 +171,7 @@
 
  .tableWrapper td{
     border: 1px solid #37B664;
+    text-align: center;
  }
 
  .acceptedStatus{
@@ -202,3 +203,100 @@
     width: 80%;
     font-family: "Poppins";
 }
+
+.detailTableWrapper{
+    width:93%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:  0px 2px 3px #888888;
+}
+.detailTableWrapper h1{
+    margin: 0;
+    padding: 0;
+}
+
+.detailTable{
+    margin-top:20px;
+}
+
+.detailTable td{
+    padding: 10px;
+}
+
+.detailTable .labelCell{
+    font-weight: bold;
+}
+
+.detailTableWrapper .rowWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.statusButtonGroup{
+    width: 20%;
+    padding: 0 5%;
+}
+
+.statusButtonGroup .acceptButton{
+    background-color: #37B664;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+.statusButtonGroup .rejectButton{
+    background-color: #AD2041;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.rowWrapper .tableWrapper{
+    width: 70%;
+    margin-right: 5%;
+    height:max-content;
+}
+
+.rowWrapper .receiptWrapper{
+    width: 25%;
+}
+
+.rowWrapper .receiptWrapper img{
+    width: 100%;
+}
+
+.claimStatusButtonGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.claimStatusButtonGroup form{
+    width: 30%;
+}
+
+.claimStatusButtonGroup .acceptButton{
+    background-color: #37B664;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+.claimStatusButtonGroup .rejectButton{
+    background-color: #AD2041;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
